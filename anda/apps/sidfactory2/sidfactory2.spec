@@ -11,7 +11,7 @@ made by the demo scene for the world.}
 Name:          %{name}
 Version:       20260314
 Release:       1%{?dist}
-Summary:       Commodore 64 SID Music Cross-Tracker
+Summary:       A Commodore C64 SID Music Cross-Editor, made by the C64 Demoscene
 License:       GPLv2
 Group:         Multimedia
 URL:           https://github.com/Chordian/%{name}
@@ -54,6 +54,7 @@ cp -a           %{dist}/drivers                   %{buildroot}%{_libexecdir}/%na
 cp -a           %{dist}/color_schemes             %{buildroot}%{_libexecdir}/%name
 cp -a           %{dist}/music                     %{buildroot}%{_libexecdir}/%name
 cp -a           %{dist}/overlay                   %{buildroot}%{_libexecdir}/%name
+cp -a           %{dist}/config                    %{buildroot}%{_libexecdir}/%name
 
 %desktop_file_install %{SOURCE1}
 %terra_appstream -o %{SOURCE0}
