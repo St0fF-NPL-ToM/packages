@@ -5,14 +5,14 @@
 %global buildforkernels akmod
 %global debug_package %{nil}
 
-%global commit 49ac9bced1771e73b9d5e3d50d5167167548efd4
-%global commitdate 20261107
+%global commit 3e4861052c5d7931e66b6cb6a6484e733ff8a419
+%global commitdate 20261115
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global modulename nct6687d
 
 Name:           %{modulename}-kmod
 Version:        1.0^%{commitdate}git.%{shortcommit}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Linux kernel driver for the NCT6687D hardware monitoring chip
 License:        GPL-2.0-or-later
 URL:            https://github.com/Fred78290/%{modulename}

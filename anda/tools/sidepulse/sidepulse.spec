@@ -1,5 +1,5 @@
-%global commit ad4a5217fd3a833cfa2a12e1eaf055f22948cd53
-%global commit_date 20261111
+%global commit 1e60d9164a46a49f23370987388824caf73ebbdf
+%global commit_date 20261117
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 %define _python_dist_allow_version_zero 1
@@ -49,7 +49,7 @@ Provides:       sidepulse
 %license LICENSE
 %{python3_sitelib}/agent_monitor/*
 %{python3_sitelib}/sidepulse_cli/*
-%{_bindir}/agent-monitor
+%{_bindir}/sp
 # macOS only
 %ghost %{_bindir}/agent-status-bar
 %{_bindir}/sidepulse
